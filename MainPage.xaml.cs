@@ -59,5 +59,22 @@ namespace assigment
             lightDriverPayment.Background = mycolor.Background;
             lightCustomers.Background = mycolor.Background;
         }
+
+        private void paymentbutton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(Pages.Payment));
+            lighthome.Background = mycolor.Background;
+            lightEat.Background = oncolor.Background;
+            lightCollection.Background = mycolor.Background;
+            lightDelivery.Background = mycolor.Background;
+            lightTakeAway.Background = mycolor.Background;
+            lightDriverPayment.Background = mycolor.Background;
+            lightCustomers.Background = mycolor.Background;
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

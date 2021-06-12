@@ -83,14 +83,14 @@
                     </StackPanel>
                 </Button>
 
-                <Button Background="#FF242223" Margin="0,10,0,0" >
+                <Button Background="#FF242223" Margin="0,10,0,0" Click="paymentbutton_Click" >
 
                     <StackPanel Orientation="Horizontal" Height="50" >
 
                         <TextBlock Text="&#xE8C7;" FontSize="36" Foreground="White"
                                    FontFamily="Segoe MDL2 Assets"/>
-                        <TextBlock Margin="20,0,0,0" Text="Driver Payment" 
-                                   FontSize="23" Foreground="White" />
+                        <TextBlock Margin="20,0,0,0" Text="Payment" 
+                                   FontSize="23" Foreground="White" SelectionChanged="TextBlock_SelectionChanged" />
                     </StackPanel>
 
                 </Button>
