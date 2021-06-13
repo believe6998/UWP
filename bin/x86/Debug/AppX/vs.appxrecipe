@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>72dc5d45-2f61-4c76-8f7c-f6fe1dade933</PackageIdentityName>
     <PackageIdentityPublisher>CN=DELL</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\DELL\Desktop\assigment\assigment\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\DELL\Desktop\UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\DELL\Desktop\UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>7332C928E8D26381BDF75148CEEAE5C4F6D9CF0E6DC7F4E91FC17CC64E52F67E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>72dc5d45-2f61-4c76-8f7c-f6fe1dade933_1.0.0.0_x86__hqhyg1cvr7f3y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>72dc5d45-2f61-4c76-8f7c-f6fe1dade933_hqhyg1cvr7f3y!App</RegisteredUserModeAppID>
@@ -27,94 +27,110 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-06-09T13:05:29.492</Modified>
+      <Modified>2021-06-13T09:42:04.843</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\assigment.exe">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\assigment.exe">
       <PackagePath>entrypoint\assigment.exe</PackagePath>
-      <Modified>2021-06-09T13:05:29.102</Modified>
+      <Modified>2021-06-13T09:42:04.171</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\newtonsoft.json\13.0.1\lib\netstandard2.0\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2021-03-17T13:03:36.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-27T12:16:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\sqlitepcl\3.8.7.2\lib\netcore451\SQLitePCL.dll">
+      <PackagePath>SQLitePCL.dll</PackagePath>
+      <Modified>2014-12-09T04:04:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T11:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
+      <PackagePath>SQLitePCL.Ext.dll</PackagePath>
+      <Modified>2014-12-09T04:04:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-06-07T12:37:51.629</Modified>
+      <Modified>2021-06-13T09:06:26.410</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-06-02T20:18:26.632</Modified>
+      <Modified>2021-06-13T09:06:26.402</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-02T20:18:26.632</Modified>
+      <Modified>2021-06-13T09:06:26.402</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-02T20:18:26.632</Modified>
+      <Modified>2021-06-13T09:06:26.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-02T20:18:26.632</Modified>
+      <Modified>2021-06-13T09:06:26.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-02T20:18:26.632</Modified>
+      <Modified>2021-06-13T09:06:26.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-02T20:18:26.632</Modified>
+      <Modified>2021-06-13T09:06:26.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-06-02T20:18:26.632</Modified>
+      <Modified>2021-06-13T09:06:26.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\assigment.xr.xml">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\assigment.xr.xml">
       <PackagePath>assigment.xr.xml</PackagePath>
-      <Modified>2021-06-09T12:59:12.931</Modified>
+      <Modified>2021-06-13T09:25:41.808</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-06-09T13:05:28.979</Modified>
+      <Modified>2021-06-13T09:42:04.020</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-06-09T13:05:28.976</Modified>
+      <Modified>2021-06-13T09:42:04.011</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\Pages\Eat.xbf">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Pages\Eat.xbf">
       <PackagePath>Pages\Eat.xbf</PackagePath>
-      <Modified>2021-06-09T13:05:28.979</Modified>
+      <Modified>2021-06-13T09:42:04.021</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\Pages\Home.xbf">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Pages\Home.xbf">
       <PackagePath>Pages\Home.xbf</PackagePath>
-      <Modified>2021-06-09T13:05:28.980</Modified>
+      <Modified>2021-06-13T09:42:04.021</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Pages\Payment.xbf">
+      <PackagePath>Pages\Payment.xbf</PackagePath>
+      <Modified>2021-06-13T09:42:04.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-18T10:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-06-09T12:59:13.483</Modified>
+      <Modified>2021-06-13T09:42:04.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\assigment\assigment\bin\x86\Debug\Core\assigment.exe">
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Core\assigment.exe">
       <PackagePath>assigment.exe</PackagePath>
-      <Modified>2021-06-09T13:05:29.486</Modified>
+      <Modified>2021-06-13T09:42:04.837</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

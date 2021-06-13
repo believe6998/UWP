@@ -1,1 +1,1 @@
-C:\Users\DELL\Desktop\assigment\assigment\assigment.csproj;x86
+C:\Users\DELL\Desktop\UWP\assigment.csproj;x86

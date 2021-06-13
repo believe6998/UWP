@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\assigment\\assigment\\assigment.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\UWP\\assigment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\assigment\\assigment\\assigment.csproj": {
+    "C:\\Users\\DELL\\Desktop\\UWP\\assigment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\assigment\\assigment\\assigment.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\UWP\\assigment.csproj",
         "projectName": "assigment",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\assigment\\assigment\\assigment.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\UWP\\assigment.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\assigment\\assigment\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -40,6 +40,14 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "SQLitePCL": {
+              "target": "Package",
+              "version": "[3.8.7.2, )"
             }
           },
           "imports": [
