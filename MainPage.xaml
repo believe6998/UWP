@@ -17,10 +17,7 @@
         <StackPanel Name="mycolor" Grid.Row="0" Background="#FF242223" Orientation="Horizontal">
             <StackPanel Orientation="Vertical" Margin="0,100,0,0">
                 <Grid Name="lighthome" Margin="0,0,10,0" Height="50" Width="10"  Background="#FFBE1B38"/>
-                <Grid Name="lightEat" Margin="0,10,10,0" Height="50" Width="10"  Background="#FFBE1B38"/>
-                <Grid Name="lightCollection" Margin="0,10,10,0" Height="50" Width="10"  Background="#FFBE1B38"/>
-                <Grid Name="lightDelivery" Margin="0,12,10,0" Height="50" Width="10"  Background="#FFBE1B38"/>
-                <Grid Name="lightTakeAway" Margin="0,20,10,0" Height="50" Width="10"  Background="#FFBE1B38"/>
+                <Grid Name="lightEat" Margin="0,20,10,0" Height="50" Width="10"  Background="#FFBE1B38"/>
                 <Grid Name="lightDriverPayment" Margin="0,20,10,0" Height="50" Width="10"  Background="#FFBE1B38"/>
                 <Grid Name="lightCustomers" Margin="0,20,10,0" Height="50" Width="10"  Background="#FFBE1B38"/>
             </StackPanel>
@@ -39,51 +36,18 @@
 
 
 
-                <Button Background="#FF242223" Margin="0,10,0,0" 
+                <Button Background="#FF242223" Margin="0,22,0,0" 
                     Name="eatbutton" Click="eatbutton_Click">
-                    <StackPanel Orientation="Horizontal" >
-
-                        <TextBlock Text="&#xE958;" FontSize="36" Foreground="White"
-                                   FontFamily="Segoe MDL2 Assets"/>
-                        <TextBlock Margin="20,0,0,0" Text="Eat-in" 
-                                   FontSize="23" Foreground="White"/>
-                    </StackPanel>
-                </Button>
-
-
-
-                <Button Background="#FF242223" Margin="0,10,0,0" >
                     <StackPanel Orientation="Horizontal" >
 
                         <TextBlock Text="&#xF5AD;" FontSize="36" Foreground="White"
                                    FontFamily="Segoe MDL2 Assets"/>
-                        <TextBlock Margin="20,0,0,0" Text="Collection" 
+                        <TextBlock Margin="20,0,0,0" Text="Category" 
                                    FontSize="23" Foreground="White"/>
                     </StackPanel>
                 </Button>
 
-
-                <Button Background="#FF242223" Margin="0,10,0,0" >
-                    <StackPanel Orientation="Horizontal" Height="50" >
-
-                        <TextBlock Text="&#xE7EC;" FontSize="36" Foreground="White"
-                                   FontFamily="Segoe MDL2 Assets"/>
-                        <TextBlock Margin="20,0,0,0" Text="Delivery" 
-                                   FontSize="23" Foreground="White" />
-                    </StackPanel>
-                </Button>
-
-                <Button Background="#FF242223"  Margin="0,10,0,0">
-                    <StackPanel Orientation="Horizontal" Height="50" >
-
-                        <TextBlock Text="&#xED56;" FontSize="36" Foreground="White"
-                                   FontFamily="Segoe MDL2 Assets"/>
-                        <TextBlock Margin="20,0,0,0" Text="Take Away" 
-                                   FontSize="23" Foreground="White" />
-                    </StackPanel>
-                </Button>
-
-                <Button Background="#FF242223" Margin="0,10,0,0" Click="paymentbutton_Click" >
+               <Button Background="#FF242223" Margin="0,23,0,0" Click="paymentbutton_Click" >
 
                     <StackPanel Orientation="Horizontal" Height="50" >
 
@@ -95,13 +59,13 @@
 
                 </Button>
 
-                <Button Background="#FF242223" Margin="0,10,0,0" >
+                <Button Background="#FF242223" Margin="0,10,0, 0" >
                     <StackPanel Orientation="Horizontal" Height="50" >
 
                         <TextBlock Text="&#xE8CF;" FontSize="35" Foreground="White"
                                    FontFamily="Segoe MDL2 Assets"/>
-                        <TextBlock Margin="20,0,0,0" Text="Customers" 
-                                   FontSize="23" Foreground="White" />
+                        <TextBlock Margin="20,0,0,0" Text="Order History" 
+                                   FontSize="23" Foreground="White" SelectionChanged="TextBlock_SelectionChanged_1" />
                     </StackPanel>
                 </Button>
             </StackPanel>

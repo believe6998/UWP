@@ -5,38 +5,30 @@
     xmlns:local="using:assigment.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:assigment.Models"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Height="600" Width="750" VerticalAlignment="Top" HorizontalAlignment="Left">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <ListView x:Name="FoodItems" Margin="50,50,0,0">
 
-        <StackPanel Orientation="Vertical"  >
-            <TextBlock Text="Only" FontSize="30" Foreground="#FFFEAD00"
-                       Margin="20,20,0,0"/>
-            <TextBlock Text="$19" FontSize="200" Foreground="#FFFEAD00"
-                       FontWeight="Bold"  HorizontalAlignment="Center"
-                       Margin="-20,-50,0,0"/>
-            <TextBlock Text="Cheeseburger" FontSize="50"  HorizontalAlignment="Center"
-                       FontWeight="Bold" Margin="-20,0,0,0"/>
-            <TextBlock Text="With Onions and tamato and ketchup" FontSize="20"  HorizontalAlignment="Center"
-                        Margin="10,0,0,0"/>
+        <ListView.ItemTemplate>
 
-            <TextBlock Text="Lorem ipsum dolor sit amet" FontSize="15"  HorizontalAlignment="Left"
-                        Margin="20,20,0,0"/>
-            <TextBlock Text="Consectetur add" FontSize="15"  HorizontalAlignment="Left"
-                        Margin="20,0,0,0"/>
-            <Button Content="Order Now" FontSize="30" Background="#FF9B8800"
-                    HorizontalAlignment="Center" Width="350" Height="60" Foreground="White"/>
-        </StackPanel>
+            <DataTemplate x:DataType="models:HomepageData">
+                <ListViewItem  Margin="0,0,0,45" Tag="{x:Bind id}" Tapped="Home_Tapped">
+                    <StackPanel Height="330" Width="250" Orientation="Vertical"  Background="White" Padding="10">
+                        <Image Margin="10" Height="200" x:Name="imgIcon" Source="{x:Bind image}"/>
+                        <TextBlock Text="{x:Bind name}" FontWeight="Bold" HorizontalTextAlignment="Center" FontSize="20" Foreground="Black"/>
+                        <TextBlock Text="{x:Bind price}" Foreground="#FFFEAD00" FontWeight="Bold" HorizontalTextAlignment="Center" FontSize="20" Margin="10"/>
+                    </StackPanel>
+                </ListViewItem>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.ItemsPanel>
+            <ItemsPanelTemplate>
+                <ItemsWrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
 
-        <StackPanel Grid.Column="1">
-            <Image Source="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG96779.png"
-                   Margin="0,200,0,0"/>
-        </StackPanel>
+            </ItemsPanelTemplate>
 
-    </Grid>
+        </ListView.ItemsPanel>
+    </ListView>
 </Page>

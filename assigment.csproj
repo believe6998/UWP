@@ -133,8 +133,14 @@
     <Compile Include="Models\HomePage.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\MenuItem.cs" />
-    <Compile Include="Pages\Eat.xaml.cs">
-      <DependentUpon>Eat.xaml</DependentUpon>
+    <Compile Include="Pages\Foods.xaml.cs">
+      <DependentUpon>Foods.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Category.xaml.cs">
+      <DependentUpon>Category.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DetailFood.xaml.cs">
+      <DependentUpon>DetailFood.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
@@ -174,7 +180,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\Eat.xaml">
+    <Page Include="Pages\Foods.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Category.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\DetailFood.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

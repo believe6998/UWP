@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="assigment.Pages.Category"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:assigment.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:assigment.Models"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ListView x:Name="MNItems" Margin="50,50,0,0">
+
+        <ListView.ItemTemplate>
+
+            <DataTemplate x:DataType="models:CategoryData">
+                <ListViewItem Margin="0,0,20,45" Tag="{x:Bind foods}" Tapped="ListViewItem_Tapped">
+                    <StackPanel Height="270" Width="230" Orientation="Vertical"  Background="White">
+                        <Image Margin="10" Height="200" x:Name="imgIcon" Source="{x:Bind category.icon}"/>
+                        <TextBlock Text="{x:Bind category.name}" FontWeight="Bold" FontSize="20" HorizontalTextAlignment="Center" Foreground="Black"/>
+                    </StackPanel>
+                </ListViewItem>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.ItemsPanel>
+            <ItemsPanelTemplate>
+                <ItemsWrapGrid MaximumRowsOrColumns="5" Orientation="Horizontal"/>
+
+            </ItemsPanelTemplate>
+
+        </ListView.ItemsPanel>
+    </ListView>
+</Page>

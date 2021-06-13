@@ -11,7 +11,9 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 assigment.xr.xml
 MainPage.xbf
-Pages\Eat.xbf
+Pages\Category.xbf
+Pages\DetailFood.xbf
+Pages\Foods.xbf
 Pages\Home.xbf
 Pages\Payment.xbf
 Properties\Default.rd.xml

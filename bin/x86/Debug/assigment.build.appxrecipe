@@ -82,8 +82,14 @@
     <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Pages\Eat.xbf">
-      <PackagePath>Pages\Eat.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Pages\Foods.xbf">
+      <PackagePath>Pages\Foods.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Pages\Category.xbf">
+      <PackagePath>Pages\Category.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Pages\DetailFood.xbf">
+      <PackagePath>Pages\DetailFood.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\Pages\Home.xbf">
       <PackagePath>Pages\Home.xbf</PackagePath>

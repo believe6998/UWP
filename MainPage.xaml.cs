@@ -28,9 +28,6 @@ namespace assigment
             MyFrame.Navigate(typeof(Pages.Home));
             lighthome.Background = oncolor.Background;
             lightEat.Background = mycolor.Background;
-            lightCollection.Background = mycolor.Background;
-            lightDelivery.Background = mycolor.Background;
-            lightTakeAway.Background = mycolor.Background;
             lightDriverPayment.Background = mycolor.Background;
             lightCustomers.Background = mycolor.Background;
         }
@@ -40,9 +37,6 @@ namespace assigment
             MyFrame.Navigate(typeof(Pages.Home));
             lighthome.Background = oncolor.Background;
             lightEat.Background = mycolor.Background;
-            lightCollection.Background = mycolor.Background;
-            lightDelivery.Background = mycolor.Background;
-            lightTakeAway.Background = mycolor.Background;
             lightDriverPayment.Background = mycolor.Background;
             lightCustomers.Background = mycolor.Background;
 
@@ -50,12 +44,9 @@ namespace assigment
 
         private void eatbutton_Click(object sender, RoutedEventArgs e)
         {
-            MyFrame.Navigate(typeof(Pages.Eat));
+            MyFrame.Navigate(typeof(Pages.Category));
             lighthome.Background = mycolor.Background;
             lightEat.Background = oncolor.Background;
-            lightCollection.Background = mycolor.Background;
-            lightDelivery.Background = mycolor.Background;
-            lightTakeAway.Background = mycolor.Background;
             lightDriverPayment.Background = mycolor.Background;
             lightCustomers.Background = mycolor.Background;
         }
@@ -65,14 +56,16 @@ namespace assigment
             MyFrame.Navigate(typeof(Pages.Payment));
             lighthome.Background = mycolor.Background;
             lightEat.Background = oncolor.Background;
-            lightCollection.Background = mycolor.Background;
-            lightDelivery.Background = mycolor.Background;
-            lightTakeAway.Background = mycolor.Background;
             lightDriverPayment.Background = mycolor.Background;
             lightCustomers.Background = mycolor.Background;
         }
 
         private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
         {
 
         }
