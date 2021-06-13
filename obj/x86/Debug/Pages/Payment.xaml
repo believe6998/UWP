@@ -12,30 +12,33 @@
     <StackPanel>
         <RelativePanel Margin="9,50,-2,31" Grid.ColumnSpan="2" Grid.Column="1">
             <Grid>
-                <ListView x:ConnectionId='4' x:Name="MNItems">
+                <ListView x:ConnectionId='6' x:Name="MNItems">
                     <ListView.ItemTemplate>
                         <DataTemplate                              >
-                            <ListViewItem x:ConnectionId='6'                    >
+                            <ListViewItem x:ConnectionId='8'                    >
                                 <RelativePanel>
-                                    <Image x:ConnectionId='7' x:Name="imgIcon"                         Width="150" Height="150" Margin="50,0,0,0"/>
-                                    <TextBlock x:ConnectionId='8' x:Name="FoodName" RelativePanel.RightOf="imgIcon" Margin="50 ,50,0,0"                      FontSize="30"/>
-                                    <TextBox x:ConnectionId='9' x:Name="Quantity" RelativePanel.RightOf="FoodName"                     VerticalAlignment="Center" Margin="50,50,0,0" Width="100" FontSize="20" />
-                                    <TextBlock x:ConnectionId='10' x:Name="unitPrice" RelativePanel.RightOf="Quantity" Margin="50 ,50,0,0"                           FontSize="30"/>
+                                    <Image x:ConnectionId='9' x:Name="imgIcon"                         Width="100" Height="100" Margin="40,0,0,0"/>
+                                    <TextBlock x:ConnectionId='10' x:Name="FoodName" RelativePanel.RightOf="imgIcon" Margin="50 ,50,0,0"                      FontSize="20"/>
+                                    <TextBlock x:ConnectionId='11' x:Name="FoodPrice" RelativePanel.RightOf="FoodName" Margin="50 ,50,0,0"                       FontSize="20"/>
+                                    <TextBox x:ConnectionId='12' x:Name="Quantity" RelativePanel.RightOf="FoodPrice"                     VerticalAlignment="Center" Margin="50,50,0,0" Width="100" FontSize="20" />
+                                    <TextBlock x:ConnectionId='13' x:Name="unitPrice" RelativePanel.RightOf="Quantity" Margin="50 ,50,0,0"                           FontSize="20"/>
                                 </RelativePanel>
                             </ListViewItem>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-
             </Grid>
-
         </RelativePanel>
-        <Button x:ConnectionId='2' Foreground="White"   Content="Order Now" FontSize="25" 
-                                                    Width="250" Margin="-900 ,30,0,0"
-                                                    HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green"                       />
 
-        <TextBlock x:ConnectionId='3' x:Name="result" Text="text" FontSize="25" 
-                                                    Width="500" Margin="-900 ,30,0,0"  />
+        <TextBlock Margin="40,0,0,0" FontSize="20">
+            <Run x:ConnectionId='5' x:Name="TotalPrice" Text=""/>
+        </TextBlock>
+
+        <Button x:ConnectionId='2' Foreground="White" Content="Đặt hàng" FontSize="25" 
+                                                    Width="250" Margin="40 ,40,0,0"
+                                                    HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="Orange"                      />
+        <TextBlock x:ConnectionId='3' x:Name="NoCart" Text="" FontSize="25" Foreground="Green" HorizontalAlignment="Center" Width="500" Margin="0 ,100,0,0"  />
+        <TextBlock x:ConnectionId='4' x:Name="result" Text="" FontSize="25" Foreground="Green" HorizontalAlignment="Center" Width="500" Margin="0 ,100,0,0"  />
 
     </StackPanel>
 </Page>

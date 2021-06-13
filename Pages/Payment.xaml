@@ -17,25 +17,28 @@
                         <DataTemplate x:DataType="models:CartItem" >
                             <ListViewItem Tag="{x:Bind id}"  >
                                 <RelativePanel>
-                                    <Image x:Name="imgIcon" Source="{x:Bind image}" Width="150" Height="150" Margin="50,0,0,0"/>
-                                    <TextBlock x:Name="FoodName" RelativePanel.RightOf="imgIcon" Margin="50 ,50,0,0" Text="{x:Bind name}" FontSize="30"/>
-                                    <TextBox x:Name="Quantity" RelativePanel.RightOf="FoodName" Text="{x:Bind qty}" VerticalAlignment="Center" Margin="50,50,0,0" Width="100" FontSize="20" />
-                                    <TextBlock x:Name="unitPrice" RelativePanel.RightOf="Quantity" Margin="50 ,50,0,0" Text="{x:Bind unitPrice}" FontSize="30"/>
+                                    <Image x:Name="imgIcon" Source="{x:Bind image}" Width="100" Height="100" Margin="40,0,0,0"/>
+                                    <TextBlock x:Name="FoodName" RelativePanel.RightOf="imgIcon" Margin="50 ,50,0,0" Text="{x:Bind name}" FontSize="20"/>
+                                    <TextBlock x:Name="FoodPrice" RelativePanel.RightOf="FoodName" Margin="50 ,50,0,0" Text="{x:Bind price}" FontSize="20"/>
+                                    <TextBox x:Name="Quantity" RelativePanel.RightOf="FoodPrice" Text="{x:Bind qty}" VerticalAlignment="Center" Margin="50,50,0,0" Width="100" FontSize="20" />
+                                    <TextBlock x:Name="unitPrice" RelativePanel.RightOf="Quantity" Margin="50 ,50,0,0" Text="{x:Bind unitPrice}" FontSize="20"/>
                                 </RelativePanel>
                             </ListViewItem>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-
             </Grid>
-
         </RelativePanel>
-        <Button Foreground="White"   Content="Order Now" FontSize="25" 
-                                                    Width="250" Margin="-900 ,30,0,0"
-                                                    HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="Green"   Click="Button_Click"/>
 
-        <TextBlock x:Name="result" Text="text" FontSize="25" 
-                                                    Width="500" Margin="-900 ,30,0,0"  />
+        <TextBlock Margin="40,0,0,0" FontSize="20">
+            <Run x:Name="TotalPrice" Text=""/>
+        </TextBlock>
+
+        <Button Foreground="White" Content="Đặt hàng" FontSize="25" 
+                                                    Width="250" Margin="40 ,40,0,0"
+                                                    HorizontalAlignment="Left" VerticalAlignment="Bottom" Background="Orange"  Click="Button_Click"/>
+        <TextBlock x:Name="NoCart" Text="" FontSize="25" Foreground="Green" HorizontalAlignment="Center" Width="500" Margin="0 ,100,0,0"  />
+        <TextBlock x:Name="result" Text="" FontSize="25" Foreground="Green" HorizontalAlignment="Center" Width="500" Margin="0 ,100,0,0"  />
 
     </StackPanel>
 </Page>

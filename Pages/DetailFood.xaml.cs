@@ -59,7 +59,7 @@ namespace assigment.Pages
         {
 
             Cart cart = new Cart();
-            CartItem item = new CartItem(food.data.id, food.data.name, food.data.image, food.data.price, 1, 0);
+            CartItem item = new CartItem(food.data.id, food.data.name, food.data.image, food.data.price, 1, "");
             if (cart.checkItemExist(item))
             {
                 cart.UpdateCart(item, cart.getItemById(item.id).qty + 1);

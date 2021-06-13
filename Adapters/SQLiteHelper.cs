@@ -11,7 +11,7 @@ namespace assigment.Adapters
 {
     class SQLiteHelper
     {
-        private readonly string _dbName = "undefined_team";
+        private readonly string _dbName = "undefinedTeam";
 
         private static SQLiteHelper _sQLiteHelper;
 

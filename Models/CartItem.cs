@@ -8,7 +8,7 @@ namespace assigment.Models
 {
     class CartItem
     {
-        public CartItem(int id, string name, string image, string price, int qty, int unitPrice)
+        public CartItem(int id, string name, string image, string price, int qty, string unitPrice)
         {
             this.id = id;
             this.name = name;
@@ -23,6 +23,6 @@ namespace assigment.Models
         public string image { get; set; }
         public string price { get; set; }
         public int qty { get; set; }
-        public int unitPrice { get; set; }
+        public string unitPrice { get; set; }
     }
 }

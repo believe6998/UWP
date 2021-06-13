@@ -40,7 +40,7 @@ namespace assigment.Dao.Impl
                 string image = (string)statement[2];
                 string price = (string)statement[3];
                 int qty = Convert.ToInt32(statement[4]);
-                int unitPrice = Convert.ToInt32(price.Remove(2, 1).Remove(4)) * qty;
+                string unitPrice = (Convert.ToInt32(price.Replace(".","").Replace(" VND", "")) * qty).ToString();
                 CartItem c = new CartItem(id, name, image, price, qty, unitPrice);
                 list.Add(c);
             }

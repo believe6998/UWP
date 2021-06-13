@@ -74,6 +74,7 @@
       <RootProperty Name="FontFamily" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalTextAlignment" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="Width" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
@@ -110,6 +111,9 @@
     </RootType>
     <RootType FullName="assigment.Pages.DetailFood" />
     <RootType FullName="assigment.Pages.Home" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
