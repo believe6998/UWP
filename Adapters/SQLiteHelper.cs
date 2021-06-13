@@ -11,32 +11,28 @@ namespace assigment.Adapters
 {
     class SQLiteHelper
     {
-        private readonly string dbName = "t2004e";
+        private readonly string _dbName = "undefined_team";
 
-        private static SQLiteHelper sQLiteHelper;
+        private static SQLiteHelper _sQLiteHelper;
 
         public static SQLiteHelper GetInstance()
         {
-            if (sQLiteHelper == null)
-            {
-                sQLiteHelper = new SQLiteHelper();
-            }
-            return sQLiteHelper;
+            return _sQLiteHelper ?? (_sQLiteHelper = new SQLiteHelper());
         }
 
         private SQLiteHelper()
         {
-            string path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, dbName);
-            sQLiteConnection = new SQLiteConnection(path); // tao db - để tên db cũng được
+            string path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, _dbName);
+            SQLiteConnection = new SQLiteConnection(path); // tao db - để tên db cũng được
             CreateCartTable();
         }
 
-        public SQLiteConnection sQLiteConnection { get; private set; }
+        public SQLiteConnection SQLiteConnection { get; private set; }
 
         public void CreateCartTable() // tao bang cart
         {
             var sql_txt = @"CREATE TABLE IF NOT EXISTS Cart(id integer primary key, name varchar(200), image varchar(200), price integer, qty integer)";
-            var statement = sQLiteConnection.Prepare(sql_txt);
+            var statement = SQLiteConnection.Prepare(sql_txt);
             statement.Step();
         }
     }

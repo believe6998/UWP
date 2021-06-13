@@ -14,7 +14,7 @@ namespace assigment.Dao.Impl
         public bool AddToCart(CartItem item)
         {
             SQLiteHelper qLiteHelper = SQLiteHelper.GetInstance();
-            SQLiteConnection sQLiteConnection = qLiteHelper.sQLiteConnection;
+            SQLiteConnection sQLiteConnection = qLiteHelper.SQLiteConnection;
             string sql_txt = "insert into Cart (id,name,image,price,qty) values(?,?,?,?,?)";
             var statement = sQLiteConnection.Prepare(sql_txt);
             statement.Bind(1, item.id);
@@ -29,7 +29,7 @@ namespace assigment.Dao.Impl
         public List<CartItem> GetCart()
         {
             SQLiteHelper qLiteHelper = SQLiteHelper.GetInstance();
-            SQLiteConnection sQLiteConnection = qLiteHelper.sQLiteConnection;
+            SQLiteConnection sQLiteConnection = qLiteHelper.SQLiteConnection;
             string sql_txt = "select * from Cart";
             var statement = sQLiteConnection.Prepare(sql_txt);
             List<CartItem> list = new List<CartItem>();
@@ -38,9 +38,10 @@ namespace assigment.Dao.Impl
                 int id = Convert.ToInt32(statement[0]);
                 string name = (string)statement[1];
                 string image = (string)statement[2];
-                int price = Convert.ToInt32(statement[3]);
+                string price = (string)statement[3];
                 int qty = Convert.ToInt32(statement[4]);
-                CartItem c = new CartItem(id, name, image, price, qty);
+                int unitPrice = Convert.ToInt32(price.Remove(2, 1).Remove(4)) * qty;
+                CartItem c = new CartItem(id, name, image, price, qty, unitPrice);
                 list.Add(c);
             }
             return list;
@@ -74,7 +75,7 @@ namespace assigment.Dao.Impl
         public bool RemoveItem(CartItem item)
         {
             SQLiteHelper qLiteHelper = SQLiteHelper.GetInstance();
-            SQLiteConnection sQLiteConnection = qLiteHelper.sQLiteConnection;
+            SQLiteConnection sQLiteConnection = qLiteHelper.SQLiteConnection;
             string sql_txt = "delete from cart where id= ?";
             var statement = sQLiteConnection.Prepare(sql_txt);
             statement.Bind(1, item.id);
@@ -84,7 +85,7 @@ namespace assigment.Dao.Impl
         public bool UpdateCart(CartItem item, int qty)
         {
             SQLiteHelper qLiteHelper = SQLiteHelper.GetInstance();
-            SQLiteConnection sQLiteConnection = qLiteHelper.sQLiteConnection;
+            SQLiteConnection sQLiteConnection = qLiteHelper.SQLiteConnection;
             string sql_txt = "update cart set qty = ? where id= ?";
             var statement = sQLiteConnection.Prepare(sql_txt);
             statement.Bind(1, qty);
@@ -95,7 +96,7 @@ namespace assigment.Dao.Impl
         public bool ClearCart()
         {
             SQLiteHelper qLiteHelper = SQLiteHelper.GetInstance();
-            SQLiteConnection sQLiteConnection = qLiteHelper.sQLiteConnection;
+            SQLiteConnection sQLiteConnection = qLiteHelper.SQLiteConnection;
             string sql_txt = "delete from cart";
             var statement = sQLiteConnection.Prepare(sql_txt);
             var rs = statement.Step();

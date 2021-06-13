@@ -47,10 +47,31 @@ namespace assigment.Pages
             List<Food> lsFoods = new List<Food>();
             DetailService service = new DetailService();
             food = await service.getFoodDetail(id);
+            var detailFood = food.data as Food;
             CultureInfo cul = CultureInfo.GetCultureInfo("vi-VN");
-            food.data.price = double.Parse(food.data.price).ToString("#,###", cul.NumberFormat) + " VND";
-            lsFoods.Add(food.data);
+            detailFood.price = double.Parse(detailFood.price).ToString("#,###", cul.NumberFormat) + " VND";
+            lsFoods.Add(detailFood);
             FoodDetailItem.ItemsSource = lsFoods;
+
+        }
+
+        private void AddToCart(object sender, RoutedEventArgs e)
+        {
+
+            Cart cart = new Cart();
+            CartItem item = new CartItem(food.data.id, food.data.name, food.data.image, food.data.price, 1, 0);
+            if (cart.checkItemExist(item))
+            {
+                cart.UpdateCart(item, cart.getItemById(item.id).qty + 1);
+            }
+            else
+            {
+                cart.AddToCart(item);
+            }
+
+            // cart.checkItemExist(item) ? cart.UpdateCart(item, cart.getItemById(item.id).qty + 1) : cart.AddToCart(item);
+
+
 
         }
     }

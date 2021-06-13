@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using assigment.Dao.Impl;
+using assigment.Models;
+using assigment.Services;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,36 +28,17 @@ namespace assigment.Pages
         public Payment()
         {
             this.InitializeComponent();
+            Cart cart = new Cart();
+            var lsCartItems = cart.GetCart();
+            MNItems.ItemsSource = lsCartItems;
         }
 
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void AppBarButton_Click(object sender, RoutedEventArgs e)
-        {
-
+            OrderService orderService = new OrderService();
+            Cart cart = new Cart();
+            CreateOrder co = await orderService.CreateOrder(cart.GetCart());
+            result.Text = "Đặt hàng thành công";
         }
     }
 }

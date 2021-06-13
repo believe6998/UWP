@@ -17,3 +17,5 @@ Pages\Foods.xbf
 Pages\Home.xbf
 Pages\Payment.xbf
 Properties\Default.rd.xml
+sqlite3.def
+sqlite3.dll

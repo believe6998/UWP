@@ -43,6 +43,9 @@
     <AppxPackagedFile Include="C:\Users\DELL\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
       <PackagePath>SQLitePCL.Ext.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -72,6 +75,9 @@
     <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\sqlite3.def">
+      <PackagePath>sqlite3.def</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\DELL\Desktop\UWP\bin\x86\Debug\assigment.xr.xml">
       <PackagePath>assigment.xr.xml</PackagePath>
